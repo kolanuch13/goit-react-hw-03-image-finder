@@ -1,0 +1,15 @@
+.Section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Gallery {
+    list-style: none;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}

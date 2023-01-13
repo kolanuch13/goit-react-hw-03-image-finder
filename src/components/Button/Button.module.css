@@ -1,0 +1,15 @@
+.Button {
+    background-color: rgb(47, 104, 153);
+    border-radius: 6px;
+    border-width: 0;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px auto;
+    padding: 0 25px;
+    text-align: center;
+    width: 200px;
+    height: 35px; 
+}
+.Button:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
