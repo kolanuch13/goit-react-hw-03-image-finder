@@ -7,15 +7,6 @@ import css from "./Modal.module.css"
 const modalRoot = document.querySelector('#modal-root')
 
 class Modal extends Component {
-    constructor() {
-        super();
-
-        this.state = {
-            link: "",
-            name: ""
-        }
-    }
-
     componentDidMount() {
         window.addEventListener('keydown', this.handleKeyDown);
     }

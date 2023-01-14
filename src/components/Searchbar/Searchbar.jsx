@@ -23,6 +23,7 @@ class Searchbar extends Component {
         }
 
         this.props.onSubmit(this.state.picture);
+        this.setState({picture: ""})
     }
 
     render() {
