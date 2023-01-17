@@ -9,8 +9,7 @@ class ImageGallery extends Component {
 
     render() {
         return (<section className={css.Section}>
-            
-            {this.props.pictureArray.length && <div className={css.Section}>
+            <div className={css.Section}>
                 <ul className={css.Gallery}>
                     {this.props.pictureArray.map(({id, webformatURL, largeImageURL, tags }) =>
                         <ImageGalleryItem
@@ -22,7 +21,7 @@ class ImageGallery extends Component {
                     )}
                 </ul>
                 {this.props.pictureArray.length >= 12 && this.props.children}
-            </div>}
+            </div>
         </section>)    
     }
 };
