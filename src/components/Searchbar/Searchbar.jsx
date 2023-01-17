@@ -20,10 +20,11 @@ class Searchbar extends Component {
         
         if (this.state.picture.trim() === '') {
             toast('🦄 Write down picture that you want.');
+        } else {
+            this.props.onSubmit(this.state.picture);
+            this.setState({picture: ""})
         }
 
-        this.props.onSubmit(this.state.picture);
-        this.setState({picture: ""})
     }
 
     render() {

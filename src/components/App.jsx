@@ -70,11 +70,11 @@ class App extends Component {
       >
         <Searchbar onSubmit={this.formSubmitHandler} />
         <div
-          style={{
-            minHeight: '100vw',
-            minWidth: '100vw',
-            background: `repeat top / 100% url("https://loremflickr.com/1000/1000/${picture}")`
-          }}
+          // style={{
+          //   minHeight: '100vw',
+          //   minWidth: '100vw',
+          //   background: `repeat top / 100% url("https://loremflickr.com/1000/1000/${picture}")`
+          // }}
         >
           {this.state.loading ?
             <Blocks /> : 
@@ -105,16 +105,3 @@ class App extends Component {
 };
 
 export default App;
-// shouldComponentUpdate(nextProps, nextState) {
-//   if (this.state.picture !== nextState.picture) {
-//     this.setState({ loading: true })
-//     this.fetchParams(nextState.picture, nextState.page);
-//   } else if (this.state.page !== nextState.page) {
-//     this.setState({ loading: true })
-//     fetch(`https://pixabay.com/api/?key=31702044-2ea23ebf9858467e7c06f0c89&q=${nextState.picture}&page=${nextState.page}&per_page=12`)
-//       .then(res => res.json())
-//       .then(get => this.setState({pictureArray: [...nextState.pictureArray, ...get.hits]}))
-//       .finally(this.setState({loading: false}))
-//   }
-
-// }
